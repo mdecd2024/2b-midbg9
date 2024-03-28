@@ -8,6 +8,7 @@ SITENAME = '網際內容管理系統'
 USE_FOLDER_AS_CATEGORY = False
 
 #PATH = 'markdown'
+
 # 開始將組員的個別網誌目錄納入分組倉儲中 and skip copying .md file under pages directory
 import os
 import shutil
@@ -46,7 +47,11 @@ combined_paths = os.path.abspath(combined_directory)
 # Set the Pelican PATH to the combined directory
 PATH = combined_paths
 
-#OUTPUT_PATH = 'blog'
+# 結束將組員的個別網誌目錄納入分組倉儲中
+
+#IGNORE_FILES = ['*']
+
+OUTPUT_PATH = 'blog'
 
 TIMEZONE = 'Asia/Taipei'
 
