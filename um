@@ -1,0 +1,28 @@
+#!/bin/bash
+
+cd 41123226
+git pull origin main
+cd ..
+cd 41123229
+git pull origin main
+cd ..
+cd 41123241
+git pull origin main
+cd ..
+cd 41123243
+git pull origin main
+cd ..
+cd 41123249
+git pull origin main
+cd ..
+cd 41123250
+git pull origin main
+cd ..
+cd 41123251
+git pull origin main
+cd ..
+
+pelican -s local_publishconf.py
+git add .
+git commit -m "更新全組個人網誌"
+git push
