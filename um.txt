@@ -32,7 +32,7 @@ cd ..
 pelican -s local_publishconf.py
 
 git add .
-git commit -m "更新41123241個人網誌"
+git commit -m "更新各組員個人網誌"
 
 git push
 
